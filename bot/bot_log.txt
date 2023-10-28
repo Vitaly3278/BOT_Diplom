@@ -10,3 +10,453 @@
 2023-09-29 21:40:01,210: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
 2023-09-29 21:42:45,155: INFO stop_polling-433 Stop polling...
 2023-09-29 21:42:45,156: WARNING start_polling-329 Goodbye!
+2023-09-30 13:37:38,067: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 13:37:38,213: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 13:37:38,213: INFO start_polling-358 Start polling.
+2023-09-30 13:37:38,841: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:33:08,439: INFO stop_polling-433 Stop polling...
+2023-09-30 14:33:08,440: WARNING start_polling-329 Goodbye!
+2023-09-30 14:33:09,453: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 14:33:09,585: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 14:33:09,585: INFO start_polling-358 Start polling.
+2023-09-30 14:33:28,947: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:34:14,106: INFO stop_polling-433 Stop polling...
+2023-09-30 14:34:14,106: WARNING start_polling-329 Goodbye!
+2023-09-30 14:34:15,051: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 14:34:15,171: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 14:34:15,171: INFO start_polling-358 Start polling.
+2023-09-30 14:34:16,340: INFO stop_polling-433 Stop polling...
+2023-09-30 14:34:16,340: WARNING start_polling-329 Goodbye!
+2023-09-30 14:34:17,196: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 14:34:17,311: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 14:34:17,312: INFO start_polling-358 Start polling.
+2023-09-30 14:34:21,298: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:37:46,204: INFO stop_polling-433 Stop polling...
+2023-09-30 14:37:46,204: WARNING start_polling-329 Goodbye!
+2023-09-30 14:37:47,092: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 14:37:47,216: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 14:37:47,216: INFO start_polling-358 Start polling.
+2023-09-30 14:37:50,402: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:38:13,606: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:38:22,782: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("data_handler() missing 1 required positional argument: 'data'")>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: data_handler() missing 1 required positional argument: 'data'
+2023-09-30 14:38:31,262: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:38:51,435: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:40:56,896: INFO stop_polling-433 Stop polling...
+2023-09-30 14:40:56,896: WARNING start_polling-329 Goodbye!
+2023-09-30 14:49:06,733: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 14:49:06,856: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 14:49:06,856: INFO start_polling-358 Start polling.
+2023-09-30 14:49:51,791: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("data_handler() missing 1 required positional argument: 'data'")>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: data_handler() missing 1 required positional argument: 'data'
+2023-09-30 14:49:57,916: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 14:52:41,853: INFO stop_polling-433 Stop polling...
+2023-09-30 14:52:41,853: WARNING start_polling-329 Goodbye!
+2023-09-30 14:57:28,384: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 14:57:28,505: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 14:57:28,505: INFO start_polling-358 Start polling.
+2023-09-30 14:57:35,881: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 15:03:24,280: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 15:07:15,982: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 15:07:38,772: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-100' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('Unsupported parse_mode')>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 90, in password_text
+    await bot.send_message(user_id, access_token, refresh_token)
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+2023-09-30 15:08:36,795: INFO stop_polling-433 Stop polling...
+2023-09-30 15:08:36,796: WARNING start_polling-329 Goodbye!
+2023-09-30 15:08:37,739: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 15:08:37,863: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 15:08:37,863: INFO start_polling-358 Start polling.
+2023-09-30 15:08:42,980: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 15:21:07,073: INFO stop_polling-433 Stop polling...
+2023-09-30 15:21:07,073: WARNING start_polling-329 Goodbye!
+2023-09-30 15:21:11,473: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-09-30 15:21:11,583: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-09-30 15:21:11,583: INFO start_polling-358 Start polling.
+2023-09-30 15:21:17,613: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 15:23:35,061: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-09-30 15:25:20,108: INFO stop_polling-433 Stop polling...
+2023-09-30 15:25:20,109: WARNING start_polling-329 Goodbye!
+2023-10-01 16:12:19,400: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-01 16:12:19,542: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-01 16:12:19,542: INFO start_polling-358 Start polling.
+2023-10-01 16:12:38,483: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-01 16:23:09,466: INFO stop_polling-433 Stop polling...
+2023-10-01 16:23:09,466: WARNING start_polling-329 Goodbye!
+2023-10-02 20:24:53,576: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:24:53,722: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:24:53,722: INFO start_polling-358 Start polling.
+2023-10-02 20:25:01,413: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:25:14,373: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("module 'requests' has no attribute 'GET'")>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 92, in password_text
+    response_task = requests.GET.get('access_token')
+                    ^^^^^^^^^^^^
+AttributeError: module 'requests' has no attribute 'GET'
+2023-10-02 20:26:35,632: INFO stop_polling-433 Stop polling...
+2023-10-02 20:26:35,633: WARNING start_polling-329 Goodbye!
+2023-10-02 20:26:36,662: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:26:36,778: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:26:36,778: INFO start_polling-358 Start polling.
+2023-10-02 20:26:42,622: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:27:42,620: INFO stop_polling-433 Stop polling...
+2023-10-02 20:27:42,621: WARNING start_polling-329 Goodbye!
+2023-10-02 20:27:43,555: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:27:43,686: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:27:43,687: INFO start_polling-358 Start polling.
+2023-10-02 20:27:48,996: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:29:56,000: INFO stop_polling-433 Stop polling...
+2023-10-02 20:29:56,001: WARNING start_polling-329 Goodbye!
+2023-10-02 20:29:56,935: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:29:57,100: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:29:57,100: INFO start_polling-358 Start polling.
+2023-10-02 20:30:00,444: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:32:06,773: INFO stop_polling-433 Stop polling...
+2023-10-02 20:32:06,773: WARNING start_polling-329 Goodbye!
+2023-10-02 20:32:07,721: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:32:07,857: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:32:07,857: INFO start_polling-358 Start polling.
+2023-10-02 20:32:14,004: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:32:34,835: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:33:20,837: INFO stop_polling-433 Stop polling...
+2023-10-02 20:33:20,837: WARNING start_polling-329 Goodbye!
+2023-10-02 20:33:21,747: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:33:22,140: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:33:22,141: INFO start_polling-358 Start polling.
+2023-10-02 20:33:24,086: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:35:04,584: INFO stop_polling-433 Stop polling...
+2023-10-02 20:35:04,584: WARNING start_polling-329 Goodbye!
+2023-10-02 20:35:05,504: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:35:05,630: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:35:05,630: INFO start_polling-358 Start polling.
+2023-10-02 20:35:07,529: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:35:19,353: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyError(0)>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 96, in password_text
+    print (i[0])
+           ~^^^
+KeyError: 0
+2023-10-02 20:35:32,788: INFO stop_polling-433 Stop polling...
+2023-10-02 20:35:32,788: WARNING start_polling-329 Goodbye!
+2023-10-02 20:36:14,317: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:36:14,442: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:36:14,442: INFO start_polling-358 Start polling.
+2023-10-02 20:36:17,675: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:41:08,490: INFO stop_polling-433 Stop polling...
+2023-10-02 20:41:08,491: WARNING start_polling-329 Goodbye!
+2023-10-02 20:41:09,382: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:41:09,516: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:41:09,517: INFO start_polling-358 Start polling.
+2023-10-02 20:41:12,284: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:42:19,497: INFO stop_polling-433 Stop polling...
+2023-10-02 20:42:19,498: WARNING start_polling-329 Goodbye!
+2023-10-02 20:42:20,623: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:42:20,752: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:42:20,753: INFO start_polling-358 Start polling.
+2023-10-02 20:42:22,208: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:43:14,513: INFO stop_polling-433 Stop polling...
+2023-10-02 20:43:14,513: WARNING start_polling-329 Goodbye!
+2023-10-02 20:43:15,413: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:43:15,536: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:43:15,537: INFO start_polling-358 Start polling.
+2023-10-02 20:43:18,566: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:43:28,851: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyError('id=')>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 96, in password_text
+    print (i['id='], i['user_first_name='])
+           ~^^^^^^^
+KeyError: 'id='
+2023-10-02 20:44:31,128: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:44:48,363: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-45' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyError('id=')>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 96, in password_text
+    print (f" {i['id']=}, i['user_first_name']")
+           ^^^^^^^^
+KeyError: 'id='
+2023-10-02 20:44:55,157: INFO stop_polling-433 Stop polling...
+2023-10-02 20:44:55,157: WARNING start_polling-329 Goodbye!
+2023-10-02 20:49:54,741: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:49:54,864: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:49:54,864: INFO start_polling-358 Start polling.
+2023-10-02 20:49:59,646: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:50:12,447: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 99, in password_text
+    await bot.send_message(i['id'],i['user_first_name'], i['user_last_name'], i['title'],
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+2023-10-02 20:51:02,639: INFO stop_polling-433 Stop polling...
+2023-10-02 20:51:02,640: WARNING start_polling-329 Goodbye!
+2023-10-02 20:51:03,537: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:51:03,667: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:51:03,667: INFO start_polling-358 Start polling.
+2023-10-02 20:51:06,066: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:51:16,924: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 96, in password_text
+    await bot.send_message(i['id'],i['user_first_name'], i['user_last_name'], i['title'],
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+2023-10-02 20:51:55,737: INFO stop_polling-433 Stop polling...
+2023-10-02 20:51:55,737: WARNING start_polling-329 Goodbye!
+2023-10-02 20:51:56,657: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:51:56,797: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:51:56,798: INFO start_polling-358 Start polling.
+2023-10-02 20:52:01,539: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:52:12,158: ERROR default_exception_handler-1757 Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Simply Bot\bot\bot_main.py", line 99, in password_text
+    await bot.send_message(i['id'],i['user_first_name'], i['user_last_name'], i['title'],
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Vitaly\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+2023-10-02 20:55:59,520: INFO stop_polling-433 Stop polling...
+2023-10-02 20:55:59,520: WARNING start_polling-329 Goodbye!
+2023-10-02 20:56:00,481: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:56:00,618: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:56:00,618: INFO start_polling-358 Start polling.
+2023-10-02 20:56:02,881: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:56:38,999: INFO stop_polling-433 Stop polling...
+2023-10-02 20:56:39,000: WARNING start_polling-329 Goodbye!
+2023-10-02 20:56:40,000: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:56:40,146: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:56:40,147: INFO start_polling-358 Start polling.
+2023-10-02 20:56:41,188: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:57:22,537: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:57:24,572: INFO stop_polling-433 Stop polling...
+2023-10-02 20:57:24,572: WARNING start_polling-329 Goodbye!
+2023-10-02 20:57:25,521: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:57:25,644: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:57:25,645: INFO start_polling-358 Start polling.
+2023-10-02 20:57:31,311: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:58:14,830: INFO stop_polling-433 Stop polling...
+2023-10-02 20:58:14,830: WARNING start_polling-329 Goodbye!
+2023-10-02 20:58:15,740: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:58:15,863: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:58:15,863: INFO start_polling-358 Start polling.
+2023-10-02 20:58:18,705: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:59:01,542: INFO stop_polling-433 Stop polling...
+2023-10-02 20:59:01,542: WARNING start_polling-329 Goodbye!
+2023-10-02 20:59:02,710: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:59:02,831: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:59:02,832: INFO start_polling-358 Start polling.
+2023-10-02 20:59:04,598: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 20:59:48,464: INFO stop_polling-433 Stop polling...
+2023-10-02 20:59:48,464: WARNING start_polling-329 Goodbye!
+2023-10-02 20:59:49,376: INFO _welcome-362 Bot: ScrumBoard [@scrum_testt_bot]
+2023-10-02 20:59:49,505: WARNING _skip_updates-358 Updates were skipped successfully.
+2023-10-02 20:59:49,505: INFO start_polling-358 Start polling.
+2023-10-02 20:59:51,772: INFO start_handler-34 user_id=388770105 user_bot=False user_message='/start'
+2023-10-02 21:11:34,174: INFO stop_polling-433 Stop polling...
+2023-10-02 21:11:34,174: WARNING start_polling-329 Goodbye!

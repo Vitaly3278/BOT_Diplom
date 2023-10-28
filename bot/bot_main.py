@@ -86,8 +86,28 @@ async def password_text(message: Message, state: FSMContext):
         response_data = response.json()
         access_token = response_data['access']
         refresh_token = response_data['refresh']
-        print(access_token, refresh_token)
-        await bot.send_message(user_id, access_token, refresh_token)
+        login_status = True
+
+        # Запрос к Django api/v1/task для получения списка заданий
+        url = "http://127.0.0.1:8000/api/v1/task/"
+        response = requests.get(url, access_token)
+
+        if response.status_code == 200:  # Аутентификация прошла успешно
+            print('Данные получены')
+            response_task = response.json()
+        else:
+            # Аутентификация не удалась
+            print('Ошибка:', response.status_code)
+            await bot.send_message(user_id, 'Данные не удалось получить')
+
+
+
+        for i in response_task:
+            print(f"id :{ i['id']}\nName : {i['user_first_name']}\nLast Name : {i['user_last_name']}\nDescription : {i['description']}")
+            print('-------------------------')
+            # await bot.send_message(i['id'],i['user_first_name'], i['user_last_name'], i['title'],
+            #                        i['description'], i['date_creation'], i['update_date'],
+            #                        i['status'], i['lead_time'], i['user'])
 
     else:
         # Аутентификация не удалась
@@ -95,66 +115,79 @@ async def password_text(message: Message, state: FSMContext):
         await bot.send_message(user_id, 'Аутентификация не удалась')
 
 
-# @dp.message_handler(commands=['options'])
-# async def options_handler(message: Message):
-#     global login_status
-#     if login_status == True:
-#         await bot.send_message(message.from_user.id, 'select an option:', reply_markup=mks.keyboard)
-#
-#
-# @dp.message_handler(commands=['quit'])
-# async def quit_handler(message: Message):
-#     global login_status
-#     global start_status
-#     await bot.send_message(message.from_user.id, 'Goodbye! See you...',
-#                            reply_markup=ReplyKeyboardRemove())
-#     login_status = False
-#     start_status = False
-#     await bot.delete_webhook(drop_pending_updates=True)
-#
-#
-# @dp.message_handler()
-# async def data_handler(message: Message, data):
-#     # text = *data
-#     await bot.send_message(message.from_user.id, data)
-#
-#
-# value = ""
-# old_value = ""
-#
-#
-# @dp.callback_query_handler(lambda call: True)
-# async def callback_options(query: CallbackQuery):
-#
-#     global value, old_value
-#     data = query.data
-#     global lgn
-#
-#     if data == 'tasks':
-#         value = 'your tasks now'
-#         await bot.edit_message_text(chat_id=query.message.chat.id,
-#                                     message_id=query.message.message_id,
-#                                     text=value, reply_markup=mks.keyboard_next)
-#         old_value = value
-#         value = ""
-#
-#     elif data == 'new task':
-#         value = 'add a new task'
-#         await bot.edit_message_text(chat_id=query.message.chat.id,
-#                                     message_id=query.message.message_id,
-#                                     text=value, reply_markup=mks.keyboard_new)
-#         old_value = value
-#         value = ""
-#
-#     elif data == 'task 1':
-#         value = 'your task 1:'
-#         res = db.user_task(lgn)
-#         await bot.edit_message_text(chat_id=query.message.chat.id,
-#                                     message_id=query.message.message_id,
-#                                     text=res, reply_markup=None)
-#         old_value = value
-#         value = ""
+@dp.message_handler(commands=['options'])
+async def options_handler(message: Message):
+    global login_status
+    if login_status == True:
+        await bot.send_message(message.from_user.id, 'select an option:', reply_markup=mks.keyboard)
+
+
+@dp.message_handler(commands=['quit'])
+async def quit_handler(message: Message):
+    global login_status
+    global start_status
+    await bot.send_message(message.from_user.id, 'Goodbye! See you...',
+                           reply_markup=ReplyKeyboardRemove())
+    login_status = False
+    start_status = False
+    await bot.delete_webhook(drop_pending_updates=True)
+
+
+@dp.message_handler()
+async def data_handler(message: Message, data):
+    # text = *data
+    await bot.send_message(message.from_user.id, data)
+
+
+value = ""
+old_value = ""
+
+
+@dp.callback_query_handler(lambda call: True)
+async def callback_options(query: CallbackQuery):
+
+    global value, old_value
+    data = query.data
+    global lgn
+
+    if data == 'tasks':
+        value = 'your tasks now'
+        await bot.edit_message_text(chat_id=query.message.chat.id,
+                                    message_id=query.message.message_id,
+                                    text=value, reply_markup=mks.keyboard_next)
+        old_value = value
+        value = ""
+
+    elif data == 'new task':
+        value = 'add a new task'
+        await bot.edit_message_text(chat_id=query.message.chat.id,
+                                    message_id=query.message.message_id,
+                                    text=value, reply_markup=mks.keyboard_new)
+        old_value = value
+        value = ""
+
+    elif data == 'task 1':
+        value = 'your task 1:'
+        res = db.user_task(lgn)
+        await bot.edit_message_text(chat_id=query.message.chat.id,
+                                    message_id=query.message.message_id,
+                                    text=res, reply_markup=None)
+        old_value = value
+        value = ""
 
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
+
+
+  # print(access_token, refresh_token)
+        await bot.send_message(user_id, 'Hello world')
+        url = "http://127.0.0.1:8000/api/v1/task/"
+        response = requests.get(url, access_token)
+        response_task = response.json()
+        for i in response_task:
+            print(f"id :{ i['id']}\nName : {i['user_first_name']}\nLast Name : {i['user_last_name']}\nDescription : {i['description']}")
+            print('-------------------------')
+            # await bot.send_message(i['id'],i['user_first_name'], i['user_last_name'], i['title'],
+            #                        i['description'], i['date_creation'], i['update_date'],
+            #                        i['status'], i['lead_time'], i['user'])
